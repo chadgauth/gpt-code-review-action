@@ -10,7 +10,7 @@ inputs:
   model:
     description: 'The OpenAI language model to use for code review'
     required: false
-    default: 'gpt-3.5-turbo'
+    default: 'gpt-4o-mini'
   openai-key:
     description: 'The OpenAI API key'
     required: true
@@ -26,7 +26,7 @@ inputs:
   max-length:
     description: 'Maximum number of characters to submit to OpenAI'
     required: false
-    default: 4000
+    default: 450000
 
 outputs:
   results:
