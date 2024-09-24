@@ -40,7 +40,7 @@ To post comments in Pull Requests, the job requires additional permissions: `pul
 
 `github-token`: The token used to authenticate with the GitHub API (optional, will take a default `${{ github.token }}`).
 
-`model`: The OpenAI language model to use for code review (optional, with a default `gpt-3.5-turbo`).
+`model`: The OpenAI language model to use for code review (optional, with a default `gpt-4o-mini`).
 
 `openai-key`: The OpenAI API key used for authentication (**required**).
 
