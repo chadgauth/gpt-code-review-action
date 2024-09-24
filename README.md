@@ -1,6 +1,6 @@
 # OpenAI Code Review Action
 
-This action uses the OpenAI GPT-3 language model to review code changes in a pull request.
+This action uses the OpenAI GPT-4o-mini language model to review code changes in a pull request.
 
 ## Usage
 
@@ -23,7 +23,7 @@ jobs:
       - uses: sshnaidm/gpt-code-review-action@v2.0
         with:
           openai-key: ${{ secrets.OPENAI_API_KEY }}
-          # model: 'gpt-4'
+          # model: 'gpt-4o-mini'
           # max-length: 8000
           # prompt: 'Only suggest performance improvements for this code.'
           # post-if-error: false
@@ -52,7 +52,7 @@ To post comments in Pull Requests, the job requires additional permissions: `pul
 
 ### Limitations
 
-Currently, only the first 4000 characters are sent due to OpenAI's limitations. Later, we will send the text in chunks, and each part will be reviewed separately.
+Currently, the first 450000 characters are sent due to OpenAI's limitations (estimated 128k context). Later, we will send the text in chunks, and each part will be reviewed separately.
 
 ## Contributing
 
