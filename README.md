@@ -24,7 +24,7 @@ jobs:
         with:
           openai-key: ${{ secrets.OPENAI_API_KEY }}
           # model: 'gpt-4o-mini'
-          # max-length: 8000
+          # max-length: 450000
           # prompt: 'Only suggest performance improvements for this code.'
           # post-if-error: false
 
